@@ -1,0 +1,8 @@
+Bitte hilf mir bei einer Modellierungsaufgabe zum Bestellprozess eines Online‑Shops (Hummelsport.de als Referenz). Ich soll drei Perspektiven darstellen und drei Modelliersprachen nutzen. Bisher habe ich:
+
+Kundensicht in Petri‑Netzen (Hauptprozess + Checkout als Subprozess).
+Unternehmenssicht geplant (Bestellung eingegangen → Registrierung → Lagerzusammenstellung → Verpackung → Versand).
+Datensicht per ERD angedacht.
+Ich brauche Vorschlaege, welche dritte Perspektive sinnvoll ist (z. B. IT/System), wie ich Subprozesse begruendet auswähle (z. B. hohe Komplexität, externe Schnittstellen, Fehlerpunkte) und welche Modelliersprache wofuer passt (Petri‑Netz, BPMN, ERD).
+Ausserdem brauche ich Quellen (insbesondere deutschsprachige, keine Wikipedia) zu Kommissionierung/Reservierung/Order Fulfillment.
+Zusätzlich soll ich ein Organigramm fuer Hummelsport erstellen: basierend auf dem Executive‑Team und einer angenommenen internen Abteilungsstruktur. Ich habe eine graue Vorlage fuer Layout/Format und einen gelben Entwurf, brauche Feedback zur Hierarchie und Struktur.
