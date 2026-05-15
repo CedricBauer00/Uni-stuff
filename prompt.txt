@@ -6,3 +6,81 @@ Datensicht per ERD angedacht.
 Ich brauche Vorschlaege, welche dritte Perspektive sinnvoll ist (z. B. IT/System), wie ich Subprozesse begruendet auswähle (z. B. hohe Komplexität, externe Schnittstellen, Fehlerpunkte) und welche Modelliersprache wofuer passt (Petri‑Netz, BPMN, ERD).
 Ausserdem brauche ich Quellen (insbesondere deutschsprachige, keine Wikipedia) zu Kommissionierung/Reservierung/Order Fulfillment.
 Zusätzlich soll ich ein Organigramm fuer Hummelsport erstellen: basierend auf dem Executive‑Team und einer angenommenen internen Abteilungsstruktur. Ich habe eine graue Vorlage fuer Layout/Format und einen gelben Entwurf, brauche Feedback zur Hierarchie und Struktur.
+
+
+
+
+Output sehr hilfreich:
+
+Hier ein kompakter Vorschlag, der dir Struktur gibt und dir die “dritte Perspektive” sowie die Auswahl von Subprozessen und Sprachen erleichtert.
+
+Dritte Perspektive (neben Kunde + Unternehmen)
+
+IT/System‑Perspektive: Fokus auf Systemgrenzen, Schnittstellen, Services, Events, Datenfluesse (z. B. Shop, Payment Provider, Lager, Versanddienst).
+Alternativ: Logistik/Partner‑Perspektive (Carrier/Fulfillment) oder Management/Controlling (KPIs, Freigaben).
+In der Praxis ist die IT/System‑Perspektive am saubersten abgrenzbar und gut mit anderer Modelliersprache belegbar.
+Sinnvolle Kombination der Modelliersprachen
+
+Petri‑Netze: Kundensicht, wenn du Nebenlaeufigkeit/Statuswechsel zeigen willst (Warenkorb, Adresse, Zahlung, Fehlpfade).
+BPMN: Unternehmenssicht, End‑to‑End Prozess (Bestellung eingegangen → Kommissionierung → Verpacken → Versand).
+ERD: Datensicht (Order, OrderItem, Customer, Payment, Shipment, Inventory, Return).
+Das deckt Prozess + Daten + Systemlogik sehr gut ab.
+Strategie zur Auswahl von Subprozessen (damit es begruendet wirkt)
+
+Kritischste Risiken/Fehlerpunkte: Zahlung fehlgeschlagen, Adressvalidierung, Lager nicht verfuegbar, Stornierung.
+Hohe Varianz/Komplexitaet: Versandarten, Split‑Shipment, Ruecksendung/Refund.
+Externen Schnittstellen: Payment Provider, Versanddienst, ERP/WMS.
+Nimm 2–3 Subprozesse, die (a) hohe Komplexitaet + (b) externe Abhaengigkeit haben. Das wirkt fachlich begruendet.
+Beispiel‑Aufteilung (konkret)
+
+Kundensicht (Petri‑Netz)
+Hauptprozess + Checkout‑Subprozess wie geplant.
+Unternehmenssicht (BPMN)
+Hauptprozess “Order Fulfillment”.
+Subprozesse: “Payment Handling”, “Pick & Pack”, “Shipping Label & Handover”.
+IT/System‑/Datensicht (ERD)
+Zeigt Datenobjekte und Beziehungen, die die BPMN‑Schritte stützen (Order ↔ Payment ↔ Shipment ↔ Inventory).
+Wie du Quellen/Bezug zu Hummelsport.de argumentierst
+Du brauchst nicht 1:1 den echten Prozess – sondern eine plausible, branchenuebliche Referenz. Gute Quellen:
+
+Payment Provider Dokus (PayPal/Stripe/Adyen) fuer Zahlungsfluss/Status.
+Carrier APIs (DHL/UPS/DPD) fuer Versandstatus/Label/Tracking.
+E‑Commerce Referenzprozesse: allgemeine Fulfillment‑Prozessbeschreibungen (z. B. “order to cash” / “order fulfillment”).
+Du kannst schreiben: “Modell basiert auf typischen E‑Commerce Fulfillment‑Standards plus beobachtbarer Funktionalitaet des Shops (Checkout, Zahlungsarten, Versandoptionen, Retourenhinweise).”
+Wenn du willst, helfe ich dir auch bei
+
+einer klaren Struktur/Gliederung deiner Arbeit,
+einer Beispiel‑BPMN Prozesskette,
+einem ERD‑Vorschlag passend zu deinen Prozessen.
+
+
+zweiter auch gut:
+
+Das ist ein guter Start. Damit es fachlich stimmig wirkt, wuerde ich zwei Dinge tun:
+
+Hauptprozess leicht schaerfen
+Deine Stellen/Transitionen sind ok, aber ein paar Begriffe klarer machen:
+S1: Bestellung eingegangen
+T1: Bestellung registrieren (ERP)
+S2: Bestellung im System angelegt
+T2: Verfuegbarkeit pruefen / Reservierung
+S3: Artikel reserviert
+T3: Kommissionieren (Pick)
+S4: Kommissioniert
+T4: Verpacken (Pack)
+S5: Versandbereit (Ende)
+Das zeigt mehr “Unternehmenslogik” und deckt typische Schritte ab. Wenn du minimal bleiben willst, reicht auch deine Variante – aber mit “Verfuegbarkeit/Reservierung” wirkt es realistischer.
+
+Subprozesse strategisch waehlen
+Waehl 2–3 Subprozesse nach Kriterien: hoher Fehleranteil, externe Schnittstelle, Entscheidungslogik.
+Gute Kandidaten:
+Bestellung registrieren (ERP‑Anlage)
+Fokus: Validierung, Kundenkonto/Guest, Zahlungsart, Datenkonsistenz.
+Verfuegbarkeit/Reservierung
+Fokus: Lagerbestand, Backorder, Alternativen, Split‑Shipment.
+Kommissionieren/Verpacken
+Fokus: parallele Wege, Batch‑Picking, Quality Check, Packmaterial.
+Wenn du Petri‑Netze fuer Unternehmenssicht nimmst, kannst du die Subprozesse dort vertiefen. Die Petri‑Netz‑Staerke ist Parallelitaet und Zustaende.
+Beispiel im Subprozess “Kommissionieren”: parallele Stellen fuer mehrere Positionen, die zusammengefuehrt werden.
+
+Wenn du moechtest, skizziere ich dir ein sauberes Petri‑Netz fuer einen dieser Subprozesse (z. B. “Verfuegbarkeit/Reservierung” oder “ERP‑Registrierung”) mit Stellen/Transitionen, damit du direkt zeichnen kannst.
