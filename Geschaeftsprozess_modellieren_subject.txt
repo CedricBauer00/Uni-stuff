@@ -1,0 +1,91 @@
+Modellierungs-Challenge
+Zweiter Portf oliobaustein
+Veröffentlicht 30.04.2026
+Ein Unternehmen – viele Perspektiven
+Hinweis: Die Aufgabenstellung wurde mit Hilfe des KI-Modells Claude genauer beschrieben.
+Modellierungs-Challenge Gesamtpaket
+Aufgabenstellung
+Kontext und Zielsetzung
+In dieser Challenge weisen Sie nach, dass Sie in der Lage sind, ein reales Unternehmen
+systematisch zu analysieren und mithilfe geeigneter Modellierungssprachen in einer
+zusammenhängenden Modellsuite darzustellen. Dabei geht es nicht nur um die technische
+Beherrschung einzelner Notationen, sondern vor allem um die Fähigkeit, die richtigen Perspektiven
+auszuwählen, konsistente Modelle zu erstellen und diese nachvollziehbar zu begründen.
+Ihr Auftrag
+1. Wählen Sie ein reales Unternehmen (oder eine Abteilung/einen Geschäftsbereich eines
+Unternehmens), zu dem Sie Zugang zu ausreichend Informationen haben.
+Achten Sie darauf, dass diese aus öffentlichen Quellen stammen (insb. sollten Sie keine
+Unternehmensgeheimnisse bspw. aus Nebenjobs teilen).
+Auch ein kleineres Unternehmen oder ein klar abgegrenzter Geschäftsbereich kann
+hervorragend geeignet sein – Tiefe ist wichtiger als Breite.
+Grenzen Sie den Scope bewusst ein: Modellieren Sie z. B. nur den Bestellprozess eines
+Onlinehändlers statt des gesamten Unternehmens. Ein überschaubares, klar abgegrenztes
+Szenario führt zu besseren Ergebnissen als der Versuch, alles abzubilden.
+2. Erstellen Sie eine Modellsuite, die das gewählte Unternehmen (bzw. den Unternehmensteil)
+aus mindestens drei unterschiedlichen Perspektiven beschreibt. Die Perspektiven können
+beispielsweise umfassen:
+• Geschäftsprozess-Perspektive (z. B. Kernprozesse, Wertschöpfungsketten)
+• Organisations-/Strukturperspektive (z. B. Aufbauorganisation, Rollen,
+Verantwortlichkeiten)
+• Daten-/Informationsperspektive (z. B. zentrale Datenstrukturen, Informationsflüsse)
+• IT-/Systemlandschafts-Perspektive (z. B. Anwendungslandschaft, Schnittstellen)
+• Strategie-/Ziel-Perspektive (z. B. Unternehmensziele, Capabilities)
+• Verhaltens-/Interaktionsperspektive (z. B. Abläufe, Zustandswechsel, Zusammenspiel von
+Akteuren)
+3. Wählen Sie für jede Perspektive eine geeignete Modellierungssprache selbständig aus.
+Begründen Sie Ihre Wahl.
+4. Stellen Sie die Konsistenz zwischen den Perspektiven sicher und dokumentieren Sie
+Querverweise und Abhängigkeiten.
+5. Verfassen Sie einen Begleitbericht, der die Modelle erläutert, Entscheidungen begründet und
+Limitationen reflektiert.
+Wichtig: Komplexität bewusst begrenzen!
+Ziel dieser Challenge ist es nicht, ein Unternehmen in seiner gesamten Komplexität abzubilden.
+Wählen Sie bewusst einen überschaubaren Ausschnitt – z. B. einen einzelnen
+Geschäftsprozess, eine Abteilung oder ein konkretes Produkt-/Serviceszenario. Konzentrieren
+Sie sich auf Tiefe und Qualität der Modelle statt auf Breite. Ein kleines, sauber modelliertes
+Beispiel ist deutlich mehr wert als ein umfassendes, aber oberflächliches Gesamtbild. Jedes
+einzelne Diagramm sollte auf einer Seite übersichtlich darstellbar sein. Es genügt eine
+Modellsuite mit mindestens 8 Modellen aus mindestens drei verschiedenen Perspektiven!
+Seite 2
+Modellierungs-Challenge Gesamtpaket
+Anforderungen an die Modellsuite
+Anforderung Beschreibung
+Perspektiven Mindestens 3 unterschiedliche Perspektiven auf das
+Unternehmen
+Modellierungssprache Frei wählbar, aber fachlich begründet (z. B. BPMN, UML, ER,
+Petri-Netze, , …)
+Konsistenz Querverweise zwischen Modellen; gemeinsame Elemente
+müssen durchgängig benannt sein
+Realbezug Erkennbarer Bezug zu einem realen Unternehmen; Quellen
+angeben
+Erläuterung der Modelle, Begründung der
+Begleitbericht
+Modellierungsentscheidungen, Reflexion über Limitationen (ca. 5
+Seiten)
+Umfang
+Insgesamt ca. 8 Modelle; jedes Diagramm soll auf einer DIN-A4-
+Seite übersichtlich darstellbar sein. Qualität und
+Nachvollziehbarkeit gehen vor Quantität.
+Abgabeformat
+• Alle Modelle als druckbare Diagramme (PDF oder Bildformat) sowie, falls möglich, im nativen
+Format des verwendeten Tools (z.B. Horus Workspace als HWEX Export)
+• Begleitbericht als PDF
+• Eigenständigkeitserklärung als PDF
+Seite 3
+Modellierungs-Challenge Gesamtpaket
+Hinweise und Tipps für Studierende
+Konsistenz sicherstellen
+• Führen Sie ein Glossar mit einheitlichen Bezeichnungen für zentrale Elemente (z. B.
+Prozesse, Rollen, Systeme, Datenobjekte).
+• Prüfen Sie, ob ein Element, das in mehreren Modellen auftaucht, überall konsistent
+dargestellt ist.
+Typische Fehler vermeiden
+• Modelle ohne erkennbaren Zusammenhang nebeneinanderstellen („Sammlung statt Suite“)
+• Notation einer Sprache fehlerhaft anwenden (z. B. BPMN-Pools falsch verwenden)
+• Zu hoher oder zu niedriger Detaillierungsgrad (weder „Vogelperspektive ohne Inhalt“ noch
+„jede Methode einzeln modelliert“)
+• Versuch, das gesamte Unternehmen vollständig abzubilden, anstatt einen klaren,
+überschaubaren Ausschnitt sauber zu modellieren
+• Begleitbericht als reine Modellbeschreibung statt als Begründung und Reflexion
+• Fehlende Quellenangaben zum Unternehmen
+Seite 4

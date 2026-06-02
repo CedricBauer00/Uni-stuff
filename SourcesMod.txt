@@ -11,3 +11,9 @@ https://en.wikipedia.org/wiki/Inventory_management
     https://www2.isye.gatech.edu/~jjb/wh/book/editions/wh-sci-0.98.1.pdf
 
     https://www.iml.fraunhofer.de/de/suche.html?_charset_=UTF-8&numberResults=15&page=1&scope=IML&lang=de&queryString=Kommissionierung
+
+    Organigramm Quellen:
+    https://finom.co/de-de/blog/was-ist-ein-ceo-coo-cfo-abkuerzung/?utm_source=www.google.com&utm_medium=referral
+
+    ERD Quellen:
+    https://lucid.co/de/vorlagen/warenkorb-uml-klassendiagramm-beispiel
