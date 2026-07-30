@@ -3,7 +3,12 @@ curl --resolve myserver.local:3491:127.0.0.1 \
      http://myserver.local:3491/cgi/print.sh
 
 - CGI nimmt port an 
-
+- ohne Query
 
 printf 'GET /cgi/print.sh HTTP/1.0\r\nHost: Example.com\r\nCookie: session=abc\r\n\r\n' | nc 127.0.0.1 3491
 - CGI nimmt keinen Port an
+
+curl --resolve myserver.local:3491:127.0.0.1 \
+     -H "Cookie: session=abc123; theme=dark" \
+     "http://myserver.local:3491/cgi/print.sh?name=max&age=42"
+- mit Query
