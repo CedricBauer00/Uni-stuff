@@ -179,3 +179,5 @@ Schritt	Code	Ergebnis	Typ
 Original	membership	{ id: "..." } oder null	UserGroup \| null
 1. !	!membership	false (wenn Objekt) / true (wenn null)	boolean
 2. !!	!!membership	true (wenn Objekt) / false (wenn null)	boolean
+
+
