@@ -181,3 +181,16 @@ Original	membership	{ id: "..." } oder null	UserGroup \| null
 2. !!	!!membership	true (wenn Objekt) / false (wenn null)	boolean
 
 
+## Parent - Child modules
+
+==**NestJS-Regel**: Alles was in imports des Root-Moduls (AppModule) steht, wird automatisch als Child-Modul registriert. Es gibt keine separate "Child"-Deklaration – der Import ist die Eltern-Kind-Beziehung.==
+
+`"Modules imported in the root module are globally available by default."
+— NestJS Docs: Module Re-exporting`
+
+- Konkret: Provider aus Modulen, die direkt im AppModule importiert werden, landen im Root-Container und sind für alle Child-Module sichtbar.
+
+### Tabelle
+Frage	Antwort
+Wo steht die Parent-Child-Beziehung?	app.module.ts → imports: [GroupsModule]
+Woher weißt du, dass Provider global sind?	1. app.get(Logger) in main.ts funktioniert<br>2. NestJS Spec: Root-Imports = globaler Container<br>3. Services in Child-Modulen können per DI darauf zugreifen
